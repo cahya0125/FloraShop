@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckOutController;
+use App\Http\Controllers\GoogleController;
 use App\Http\Middleware\IsAdmin;
 use Illuminate\Support\Facades\Auth;
 
@@ -98,6 +99,10 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
 
 });
 
+Route::controller(GoogleController::class)->group(function(){
+    Route::get('auth/google','redirectToGoogle')->name('auth.google');    
+    Route::get('auth/google/callback','handleGoogleCallback');    
+});
 
 // Route::middleware('auth')->group(function () {
 //     Route::get('/checkout', [OrderController::class, 'index'])->name('checkout.index');

@@ -64,7 +64,7 @@
               <p class="mb-0">Enter your credentials to login your account</p>
               <div class="row g-3 my-4">
                 <div class="col-12 col-lg-6">
-                  <button class="btn btn-light py-2 font-text1 fw-bold d-flex align-items-center justify-content-center w-100"><img src="assets/images/apps/05.png" width="20" class="me-2" alt="">Google</button>
+                  <a class="btn btn-light py-2 font-text1 fw-bold d-flex align-items-center justify-content-center w-100" href="{{route('auth.google')}}"><img src="assets/images/apps/05.png" width="20" class="me-2" alt="">Google</a>
                 </div>
                 <div class="col col-lg-6">
                   <button class="btn btn-light py-2 font-text1 fw-bold d-flex align-items-center justify-content-center w-100"><img src="assets/images/apps/17.png" width="20" class="me-2" alt="">Facebook</button>
