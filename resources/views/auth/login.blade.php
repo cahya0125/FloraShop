@@ -66,6 +66,7 @@
                 <div class="col">
                   <a class="btn btn-light py-2 font-text1 fw-bold d-flex align-items-center justify-content-center w-100" href="{{route('auth.google')}}"><img src="assets/images/apps/05.png" width="20" class="me-2" alt="">Google</a>
                 </div>
+                
               </div>
               <div class="separator section-padding">
                 <div class="line"></div>
